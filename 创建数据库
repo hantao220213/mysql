@@ -1,0 +1,18 @@
+创建数据库
+CREATE {DATABASE|SCHEMA} db_name;
+检测数据库名称是否存在，不存在则创建
+CREATE DATABASE [IF NOT EXISTS] db_name;
+创建数据库的时候，指定编码
+CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset;
+修改数据库的编码
+ALTER DATABASE db_name DEFAULT CHARACTER SET [=] charset;
+查看指定数据库的详细信息
+SHOW CREATE DATABASE db_name;
+进入数据库
+use db_name;
+获取当前所在数据路径
+SELECT {DATABASE()|SCHEMA()};
+数据库存在则删除
+DROP DATABASE [IF EXISTS] db_name;
+查看警告
+SHOW WARNINGS;
